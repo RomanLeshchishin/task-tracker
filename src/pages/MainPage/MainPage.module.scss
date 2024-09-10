@@ -1,9 +1,17 @@
+@import "../../styles/textFont.module";
+
 .mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
 
   .createTaskBtn {
     padding-top: 70px;
+
+    .createBtnFont {
+      @extend .textFont;
+      padding: 20px;
+    }
   }
 }

@@ -1,0 +1,12 @@
+@import "../../../styles/textFont.module";
+
+.currentCardContent {
+  @extend .textFont;
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #E9E9E9;
+  border-radius: 10px;
+  padding: 10px;
+}
