@@ -1,0 +1,12 @@
+.taskCard {
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+
+  .taskContent {
+    width: 430px;
+    margin: auto;
+    text-align: left;
+    line-height: 2px;
+  }
+}

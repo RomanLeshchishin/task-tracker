@@ -1,0 +1,38 @@
+@import "../../../styles/textFont.module";
+
+.card {
+  height: 30px;
+  width: 452px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  .cardInputBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .cardInput {
+      @extend .textFont;
+      width: 100px;
+      border-color: #4096ff;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+    }
+
+    .cardInputDescr {
+      @extend .cardInput;
+      font-size: 15px;
+    }
+  }
+
+  .cardButtons {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+  }
+}

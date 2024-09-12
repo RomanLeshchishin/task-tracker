@@ -17,9 +17,13 @@ const MainPage = observer(() => {
 				<Button onClick={handleClickCreate} className={styles.createBtnFont}>Создать задачу</Button>
 			</div>
 			{isShow && <CreateTaskCard/>}
-			<CollapsedTaskCard/>
-			<TaskCard small={false}/>
-			<CollapsedTaskCard/>
+			{
+				task.taskArray.map((task, count) =>
+					task.subTasks.length !== 0
+						? <CollapsedTaskCard key={count} item={task} border={false}/>
+						: <TaskCard small={false} key={count} item={task} border={false} left={0}/>)
+			}
+			{/*<TaskCard small={false}/>*/}
 		</div>
 	);
 });

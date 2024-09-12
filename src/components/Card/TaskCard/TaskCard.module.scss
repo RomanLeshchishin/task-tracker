@@ -3,29 +3,66 @@
 .taskCard {
   width: 452px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   border: 1px solid #d9d9d9;;
   border-radius: 8px;
   padding: 10px 24px;
 
-  .taskContent {
-    @extend .textFont;
-    width: 430px;
-    text-align: left;
-    line-height: 2px;
+  .taskCardMainBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .taskContent {
+      @extend .textFont;
+      width: 430px;
+      text-align: left;
+      line-height: 2px;
+    }
+
+    .taskRightBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      .taskButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
   }
 }
 
 .smallTaskCard {
   width: 430px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  .smallTaskContent {
+  .smallTaskCardMainBlock {
     width: 430px;
-    margin: auto;
-    text-align: left;
-    line-height: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .smallTaskContent {
+      width: 430px;
+      margin: auto;
+      text-align: left;
+      line-height: 2px;
+    }
+
+    .smallTaskRightBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      .smallTaskButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+    }
   }
 }
