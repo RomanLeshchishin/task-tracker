@@ -1,0 +1,31 @@
+@import "../../../styles/textFont.module";
+
+.taskCard {
+  width: 452px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #d9d9d9;;
+  border-radius: 8px;
+  padding: 10px 24px;
+
+  .taskContent {
+    @extend .textFont;
+    width: 430px;
+    text-align: left;
+    line-height: 2px;
+  }
+}
+
+.smallTaskCard {
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+
+  .smallTaskContent {
+    width: 430px;
+    margin: auto;
+    text-align: left;
+    line-height: 2px;
+  }
+}

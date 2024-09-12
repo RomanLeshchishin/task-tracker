@@ -3,8 +3,8 @@
 .card {
   height: 170px;
   width: 500px;
-  border: 2px solid #E9E9E9;
-  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -14,7 +14,7 @@
   .cardInput {
     @extend .textFont;
     width: 450px;
-    border-color: #81d4fa;
+    border-color: #4096ff;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -23,7 +23,7 @@
 
   .cardInputDescr {
     @extend .cardInput;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .cardButtons {
