@@ -1,6 +1,6 @@
-import {Button, Checkbox} from "antd";
+import {Checkbox} from "antd";
 import styles from "./TaskCard.module.scss";
-import {DeleteTwoTone, EditTwoTone, PlusOutlined} from "@ant-design/icons";
+import {DeleteTwoTone, PlusOutlined} from "@ant-design/icons";
 import {TaskType} from "../../../types/TaskType.ts";
 import task from "../../../store/store.ts";
 import SmallCreateTaskCard from "../SmallCreateTaskCard/SmallCreateTaskCard.tsx";
@@ -16,17 +16,17 @@ interface TaskCardProps {
 const TaskCard = ({ item, small, left, border } : TaskCardProps) => {
 	const [showSmallCreateCard, setShowSmallCreateCard] = useState(false);
 
-	const handleClickPlus = (e) => {
+	const handleClickPlus = (e: any) => {
 		e.stopPropagation()
 		setShowSmallCreateCard(true)
 	}
 
-	const handleClickCheckbox = (e) => {
+	const handleClickCheckbox = (e: any) => {
 		e.stopPropagation()
 		task.completeTask(item.id)
 	}
 
-	const handleClickDelete = (e) => {
+	const handleClickDelete = (e: any) => {
 		e.stopPropagation()
 		task.deleteTask(item.id)
 	}

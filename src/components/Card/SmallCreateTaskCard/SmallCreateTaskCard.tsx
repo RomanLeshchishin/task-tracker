@@ -8,13 +8,13 @@ interface SmallCreateTaskCardProps {
 }
 
 const SmallCreateTaskCard = ({ id, setShowCard } : SmallCreateTaskCardProps) => {
-	const handleClickSave = (e) => {
+	const handleClickSave = (e: any) => {
 		e.stopPropagation()
 		setShowCard(false)
 		task.addSubTask(id)
 	}
 
-	const handleClickCancel = (e) => {
+	const handleClickCancel = (e: any) => {
 		e.stopPropagation()
 		setShowCard(false)
 		task.setName('')
